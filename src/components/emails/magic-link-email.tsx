@@ -1,0 +1,1 @@
+export function MagicLinkEmail(props: any) { return null; }

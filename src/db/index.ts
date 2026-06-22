@@ -7,4 +7,4 @@ neonConfig.fetchConnectionCache = true
 
 const sql = neon(env.DATABASE_URI)
 
-export const db = drizzle(sql, { schema })
+export const db = drizzle(sql as any, { schema })

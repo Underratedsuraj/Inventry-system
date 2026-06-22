@@ -1,1 +1,1 @@
-export function EmailVerificationEmail() { return null; } 
+export function EmailVerificationEmail(props: any) { return null; } 

@@ -1,1 +1,1 @@
-export function ResetPasswordEmail() { return null; } 
+export function ResetPasswordEmail(props: any) { return null; } 
