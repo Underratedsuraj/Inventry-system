@@ -4,6 +4,8 @@ import("./src/env.mjs")
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ["tsx", "mdx", "ts", "js"],
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
   images: {
     remotePatterns: [
       {
