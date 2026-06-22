@@ -9,7 +9,6 @@ import { siteConfig } from "@/config/site"
 import { ThemeProvider } from "@/providers/theme-provider"
 import { cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
 
 // import { ThemeToggle } from "@/components/theme-toggle"
 
@@ -82,9 +81,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           {children}
 
           <Toaster />
-          <TailwindIndicator />
-          {/* <ThemeToggle /> */}
-        </ThemeProvider>
+          
       </body>
     </html>
   )
