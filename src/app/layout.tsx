@@ -10,8 +10,6 @@ import { ThemeProvider } from "@/providers/theme-provider"
 import { cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster"
 
-// import { ThemeToggle } from "@/components/theme-toggle"
-
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -42,7 +40,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -61,7 +58,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  // manifest: `${siteConfig.url}/site.webmanifest`,
 }
 
 interface RootLayoutProps {
@@ -79,11 +75,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           disableTransitionOnChange
         >
           {children}
-
           <Toaster />
-          
+        </ThemeProvider>
       </body>
     </html>
   )
 }
- 
